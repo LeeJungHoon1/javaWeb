@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="./css/register.css"  rel="stylesheet" />
+<script>
+function check(){
+	let frm = document.frm;
+	let userid = frm.userid;
+	let username = frm.username;
+	let yy = frm.yy.value;
+	let mm = frm.mm.value;
+	let dd = frm.dd.value;
+	let birthday = yy+mm+dd	
+	let gender = frm.gender;
+	let specialty = frm.specialty;
+	let charm = frm.charm;
+	
+	if( userid.value  ==""){
+		alert("아이디입력");
+		userid.focus();
+		return false;
+	}
+	if( username.value ==""	){
+		alert("이름입력");
+		username.focus();
+		return false;	
+	}	
+	
+	if( yy.value ==""	){
+		alert("생년월일입력");
+		yy.focus();
+		return false;	
+	}	
+	if( mm.value ==""	){
+		alert("생년월일입력");
+		mm.focus();
+		return false;	
+	}	
+	if( dd.value ==""	){
+		alert("생년월일입력");
+		dd.focus();
+		return false;	
+	}	
+	
+	if( gender.value ==""	){
+		alert("성별선택");
+		gender.focus();
+		return false;	
+	}		
+	if( specialty.value ==""	){
+		alert("실력무대선택");
+		specialty.focus();
+		return false;	
+	}		
+	if( charm.value ==""	){
+		alert("매력무대입력");
+		charm.focus();
+		return false;	
+	}		
+	
+	return true;
+}
+	
+</script>
+</head>
+<body>
+<form name="frm" action="register_action.jsp" method="post" onsubmit="return check()">
+	<table>
+		<tr>
+			<td>참가자ID</td>
+			<td><input type="text" name="userid"></td>
+		</tr>
+		<tr>
+			<td>참가자이름</td>
+			<td><input type="text" name="username"></td>
+		</tr>
+		<tr>
+			<td>생년월일</td>
+			<td><input type="text" name="yy" size="13px"/>년
+				<input type="text" name="mm" size="13px"/>월
+				<input type="text" name="dd" size="13px"/>일
+			</td>
+		</tr>
+		<tr>
+			<td>성별</td>
+			<td><input type="radio" name="gender" value="M">남
+				<input type="radio" name="gender" value="F">여</td>
+		</tr>
+		<tr>
+			<td>실력무대</td>
+			<td>
+				<select name="specialty">
+					<option>선택</option>
+					<option value="V">[V]보컬</option>
+					<option value="D">[D]댄스</option>
+					<option value="R">[R]랩</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>매력무대</td>
+			<td><input type="text" name="charm"></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button>저장</button>
+				<button src="./main.html">취소</button>
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

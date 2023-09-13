@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<script>	
+	function send(){
+		//alert("전송완료");		
+		//$.ajax();  (  ) 인자정보를 객체타입으로 제공함
+		$.ajax({
+			type: "get",
+			dataType: "json", // dataType: "text" 으로 하면 텍스트형태로 띄움
+			url: "/ajaxPrj_09_6/food5",
+			success: function( data ){
+				alert(data);				
+				//$("#result").html(data); //결과 id값이 result인 div를 html형태로 찍는것				
+				console.log(data);
+							
+			},
+			error: function(err){
+				console.log(err);				
+			}
+		});   		
+	}	
+</script>
+</head>
+<body>	
+	<button onclick="send()">음식정보</button>	
+	<div id="result"></div id="result">	
+</body>
+</html>

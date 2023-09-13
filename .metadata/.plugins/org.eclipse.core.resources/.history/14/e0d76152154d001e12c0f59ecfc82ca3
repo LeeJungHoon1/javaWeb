@@ -1,0 +1,6 @@
+package acorn;
+
+public class FoodService {
+
+	FoodDAO dao = new FoodDAO();
+}

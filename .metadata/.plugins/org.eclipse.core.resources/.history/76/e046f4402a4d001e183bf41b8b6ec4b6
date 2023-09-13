@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+	function list(){
+		$.ajax({
+			type:"get",
+			dataType: "json",
+			url:"/day10_0907/foodlist",
+			success: function(data){
+				alert(data);
+				console.log(data);
+				
+				for(let i=0;i<data.length;i++){
+					let item = data[i];
+					let str = `<tr><td> ${item.name}<td><td> ${item.price}</td></tr>`;
+					$("#result").append(str);
+				}
+			},
+			error: function(){
+				arert("요청에 실패하였습니다.")
+			}
+		})
+		
+	}
+	
+</script>
+</head>
+<body>
+
+
+<button onclick="list()">음식 리스트</button>
+
+<table id="result">
+	<tr>
+		<td>이름</td>
+		<td>가격</td>
+	</tr>
+	
+</table>
+
+</body>
+</html>

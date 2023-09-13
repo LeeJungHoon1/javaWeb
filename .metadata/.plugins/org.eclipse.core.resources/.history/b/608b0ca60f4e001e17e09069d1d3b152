@@ -1,0 +1,10 @@
+package Ex;
+
+public class Coffee {
+	
+	String code;
+	String name;
+	int price;
+	
+	
+}

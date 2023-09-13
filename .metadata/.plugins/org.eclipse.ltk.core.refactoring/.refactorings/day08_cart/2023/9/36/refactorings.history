@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;build&apos; to &apos;build&apos;" description="Move &apos;build&apos; to &apos;build&apos;" destination="build" element1="day08_cart/build" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1694044964612" updateReferences="true"/>
+</session>

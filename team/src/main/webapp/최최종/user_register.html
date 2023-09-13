@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="./css/home.css" rel="stylesheet"/>
+<link href="./css/default.css" rel="stylesheet"/>
+<style>
+.table1{
+	margin : 0 auto;
+	margin-top: 100px;
+}
+
+</style>
+<script>
+	function check(){
+		let frm = document.frm;
+		let u_id = frm.u_id;
+		let u_pw = frm.u_pw;
+		let name = frm.name;
+		let adress = frm.adress;
+		let tel = frm.tel;
+		let gender = frm.gender;
+		
+		if(u_id.value == ""){
+			arlt("아이디를 입력하세요.");
+			return false;
+		}else if(u_pw.value == ""){
+			arlt("비빌번호를 입력하세요.");
+			return false;
+		}else if(name.value == ""){
+			arlt("이름을 입력하세요.");
+			return false;
+		}else if(adress.value == ""){
+			arlt("주소를 입력하세요.");
+			return false;
+		}else if(tel.value == ""){
+			arlt("전화번호를 입력하세요.");
+			return false;
+		}else if(gender.value == ""){
+			arlt("성별을 선택하세요.");
+			return false;
+		}else{
+			return true;
+		}
+	}
+</script>
+</head>
+<body>
+	<header>
+	<a class="home" href="Mindex.jsp">MUSINSA</a>
+</header>
+<nav>
+	<ul>
+		<li><a class="regi" href="user_register.html">회원가입</a></li>
+		<li><a class="check" href="MList.jsp">주문조회</a></li>
+	</ul>
+</nav>
+<section>
+	
+<form name="frm" action="user_register_action.jsp" method="post" onsubmit="return check()">
+	<table class="table1">
+		<tr>
+			<td>아이디</td>
+			<td><input type="text" name="u_id" autofocus placeholder="예)aaa111,bbb323"></td>
+		</tr>
+		<tr>
+			<td>비밀번호</td>
+			<td><input type="text" name="u_pw" placeholder="예)5484,8865"></td>
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td><input type="text" name="name" placeholder="홍길동"></td>
+		</tr>
+		<tr>
+			<td>주소</td>
+			<td><input type="text" name="adress"placeholder="예)서울시 은평구"></td>
+		</tr>
+		<tr>
+			<td>전화번호</td>
+			<td><input type="text" name="tel" placeholder="예)010-5154-9742"></td>
+		</tr>
+		<tr>
+			<td>성별</td>
+			<td>
+				<input type="radio" name="gender" value="M">남</input>
+				<input type="radio" name="gender" value="F">여</input>
+			</td>
+		</tr>
+		<tr >
+			<td colspan='2'>
+			<button>등록</button>
+			<button>취소</button>
+			</td>
+			
+		</tr>
+	</table>
+	
+</form>
+</section>
+<footer>
+	MUSINSA
+</footer>
+</body>
+</html>

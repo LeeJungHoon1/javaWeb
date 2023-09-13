@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function check(){
+		let frm = document.frm;
+		let regno = frm.regno;
+		let regtime = frm.regtime;
+		let regdate = frm.regdate;
+	}
+</script>
+<link href="./css/taxi_register.css"  rel="stylesheet" /> 
+</head>
+<body>
+<header>
+	택시예약프로그램
+</header>
+
+<nav>
+<ul>
+	<li>택시예약</li>
+	<li>택시수정</li>
+	<li>택시환불</li>
+	<li>홈으로</li>
+</ul>
+</nav>
+
+<section>
+	<form name="frm" action="./register_action.jsp" method="post">	
+	<p style="text-align: center;">택시 예약 등록</p>
+	<table>
+		<tr>
+			<td>예약번호</td>
+			<td>
+				<input type ="text" name="regno"></td>
+		</tr>
+		<tr>
+			<td>예약시간</td>
+			<td>
+				<input type ="text" name="regtime"></td>
+		</tr>
+		<tr>
+			<td>예약날짜</td>
+			<td>
+				<input type ="text" name="regdate"></td>
+		</tr>
+		<tr>
+			<td>고객아이디</td>
+			<td>
+				<input type ="text" name="userid"></td>
+		</tr>
+		<tr>
+			<td>출발지</td>
+			<td>
+				<input type ="text" name="start"></td>
+		</tr>
+		<tr>
+			<td>목적지</td>
+			<td>
+				<input type ="text" name="destination"></td>
+		</tr>
+		<tr>
+			<td>택시번호</td>
+			<td>
+				<input type ="text" name="taxino"></td>
+		</tr>
+		<tr>
+			<td>배차상태</td>
+			<td>
+				<select>
+					<option>선택하기</option>
+					<option>[P]배차완료</option>
+					<option>[R]배차준비</option>
+					<option>[X]배차미정</option>
+				</select>
+			</td >
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button>등록</button>
+				<button>다시입력</button>
+			</td>
+		</tr>
+	</table>
+	</form>
+</section>
+
+<footer></footer>
+</body>
+</html>

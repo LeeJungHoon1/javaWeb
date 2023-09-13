@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	function check(){
+		let frm = document.frm;
+		let order_code = frm.order_code;
+		let id = frm.id;
+		let goods_code = frm.goods_code;
+		let goods_cnt = frm.goods_cnt;
+		
+		if(order_code==""){
+			alert("주문번호를 입력하시오.");
+			order_code.focus();
+			return false;
+		}
+		if(id==""){
+			alert("유저아이디를 입력하시오.");
+			id.focus();
+			return false;
+		}
+		if(goods_code==""){
+			alert("상품코드를 입력하시오.");
+			goods_code.focus();
+			return false;
+		}
+		if(goods_cnt==""){
+			alert("주문수량을 입력하시오.");
+			goods_cnt.focus();
+			return false;
+		}
+		return true;
+	}
+	
+</script>
+</head>
+<body>
+<form name="frm" action="M_action.jsp" method="post" onsubmit="return check()">
+	<table>
+		<caption>주문등록</caption>
+		<tr>
+			<td>주문번호</td>
+			<td><input type="text" name="order_code"></td>
+		</tr>
+		<tr>
+			<td>고객아이디</td>
+			<td><input type="text" name="id"></td>
+		</tr>
+		<tr>
+			<td>상품코드</td>
+			<td><input type="text" name="goods_code"></td>
+		</tr>
+		<tr>
+			<td>주문수량</td>
+			<td><input type="text" name="goods_cnt"></td>
+		</tr>
+		<tr>
+			<td colspan='2'>
+				<button>등록하기</button>
+				<button type="reset">다시입력</button>
+			</td>
+		</tr>
+	</table>
+	
+	
+	
+	
+	
+	
+	
+</form>
+</body>
+</html>

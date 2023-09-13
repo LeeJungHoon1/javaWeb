@@ -1,0 +1,15 @@
+package acorn;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TestTest {
+
+	@Test
+	void testAdd() {
+		Test t = new Test();
+		fail("Not yet implemented");
+	}
+
+}

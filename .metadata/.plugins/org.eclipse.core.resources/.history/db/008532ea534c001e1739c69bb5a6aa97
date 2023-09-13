@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<script>
+	//document.getElementById("userid")
+	//document.getElementById("userid").value = "새로운 내용"
+	//document.querySelector("#userid")
+	let useridT = $("#userid")
+	alert(useridT);
+	
+	let contents = $("#userid").val();
+	alert(contents);
+</script>
+
+<body>
+
+
+<input type="text" id="userid">
+<button>클릭</button>
+
+</body>
+</html>

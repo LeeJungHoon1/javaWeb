@@ -1,0 +1,9 @@
+package acron;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/food0")
+public class FoodServlet extends HttpServlet{
+
+}

@@ -1,0 +1,14 @@
+package prj0913;
+
+import java.util.HashMap;
+
+public class MapEx {
+
+	public static void main(String[] args) {
+		
+		
+		//Map
+		// 키, 갑의 형태로 데이터 저장함
+		HashMap<String,String> map = new HashMap<>();
+	}
+}

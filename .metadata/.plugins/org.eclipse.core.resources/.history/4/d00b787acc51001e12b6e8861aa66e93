@@ -1,0 +1,9 @@
+package prj0913;
+
+public class SetEx {
+	public static void main(String[] args) {
+		
+		HashSet<String> fruits = new HashSet<>();
+		
+	}
+}

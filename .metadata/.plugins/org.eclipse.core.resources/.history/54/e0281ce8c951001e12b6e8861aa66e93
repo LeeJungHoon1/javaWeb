@@ -1,0 +1,11 @@
+package prj0913;
+
+public class MapEx {
+
+	public static void main(String[] args) {
+		
+		
+		//Map
+		HashMap<String,String> map = new HashMap<>();
+	}
+}

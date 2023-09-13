@@ -1,0 +1,20 @@
+package day10_0907;
+
+import java.util.ArrayList;
+
+import org.json.JSONArray;
+
+public class FoodService {
+
+	FoodDAO dao = new FoodDAO();
+	
+	public JSONArray getFoodList(){
+		
+		ArrayList<Food> list  = dao.FoodAll();
+		JSONArray jlist = new JSONArray();
+		
+		
+		
+		return list;
+	}
+}

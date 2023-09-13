@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+table{
+	
+	border:1px solid black;
+	border-style: double;
+	margin : 0 auto;
+	
+}
+
+th{
+	border-style: double;
+	background-color: black;
+	color: beige;
+	font-weight: bold;
+}
+
+td{
+	width: 300px;
+	height: 25px;
+	border:1px solid black;
+	text-align: center;
+	
+}
+button{
+	margin-left: 5px;
+	
+}
+a{
+	text-decoration: none;
+	color: black;
+	margin-top: 300px;
+	
+}
+
+

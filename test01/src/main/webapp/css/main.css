@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+header{
+	background-color: blue;
+	text-align: center;
+	margin:0 auto;
+	height:30px;
+	padding:20px;
+}
+nav{
+	background-color: darkblue;
+	margin:0 auto;
+	color:white;
+	height:30px;
+}
+.navId{
+	list-style: none;
+}
+nav ul li{
+	margin-left:14px;
+	margin-top:5px;
+	display:inline-block;
+	font-size:12px;
+}
+section > li{
+	padding:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

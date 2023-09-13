@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+	function send(){
+		//alert("asdasdas");
+		
+		//$.ajax();  (  )  인자정보를 객체타입으로 제공함
+		
+		$.ajax({
+			type: "get",
+			dataType: "text",	//서버가 나에게 주는 값
+			url: "/ajaxPrj_09_6/food0",			// 키 vlaue
+			
+			success:function(data, status){
+				console.log(data);
+				
+			},
+			error: function(){
+				
+			}
+		});
+		
+	}
+	
+</script>
+</head>
+<body>
+
+
+	<button onclick="send()">음식정보</button>
+
+	<div id="result"></div>
+
+</body>
+</html>
