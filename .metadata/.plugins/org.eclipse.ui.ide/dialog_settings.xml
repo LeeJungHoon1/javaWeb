@@ -17,4 +17,12 @@
 			<item value="C:\Users\user\eclipse-workspace22\sessionPrj"/>
 		</list>
 	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="235"/>
+		<item key="DIALOG_Y_ORIGIN" value="356"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
 </section>
